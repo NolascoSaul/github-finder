@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search and display GitHub user profiles and repositories.">
+    <title>Github Info</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://kit.fontawesome.com/9958d37138.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>GitHub Finder</h1>
+    </header>
+    <main>
+        <h2>Find GitHub profiles and repositories.</h2>
+        <section class="container search">
+            <form id="form" class="">
+                <div class="input-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="username" placeholder="Enter GitHub username" required>
+                </div>
+                <button type="submit" id="btnSearch" class="button" disabled>Search</button>
+            </form>
+        </section>
+
+        <section id="user-info"></section>
+    </main>
+</body>
+
+</html>
